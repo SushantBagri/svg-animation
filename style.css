@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: cyan;
+}
+
+.wrapper{
+  position: relative;
+}
+
+#ball{
+  position: absolute;
+  top: 280px;
+    left: 12px;
+}
+
+#s-line{
+  position: absolute;
+  left: 5px;
+  top: 264px;
+}
+
+.svg-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.svg-line{
+  background-color: rgba(255, 157, 0, 0.835);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 70vh;
+  padding: 2rem 0;
+}
+
+.svg-text{
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 70vh;
+  padding: 2rem 0;
+}
+
+.svg-morphin{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+  padding: 2rem 0;
+}
+
+.svg-path-ani{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+  padding: 2rem 0;
+}
+
+#demo-svg{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#demo-text path{
+  box-shadow: 10px 10px 10px cyan;
+}
+
+.path{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 10s linear;
+    -webkit-animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
